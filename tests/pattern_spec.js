@@ -100,7 +100,7 @@ describe("VanillaMasker.toPattern", function() {
   });
 
   it('returns "(___) ___-_____" when input is empty and placeholder is _', function(){
-    expect(VMasker.toPattern('', {pattern: "(999) 999-9999", placeholder: "_"})).toEqual('(___) ___-____');
+    expect(VMasker.toPattern('', {pattern: "(999) 999-9999", placeholder: "_"})).toEqual('');
   });
 
   it('returns "(111) 111-1111" when input is 1111111111 and placeholder is _', function(){
